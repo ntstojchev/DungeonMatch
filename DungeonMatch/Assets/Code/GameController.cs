@@ -1,13 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Code
 {
 	public class GameController : MonoBehaviour
 	{
 		public BoardController Board;
-		
+		public GameType GenerateBoardType;
+
+		private static GameController _instance;
+
+		public static GameController GetGame()
+		{
+			return _instance;
+		}
+
+		private void Awake()
+		{
+			_instance = this;
+		}
+
 		// Use this for initialization
 		void Start()
 		{

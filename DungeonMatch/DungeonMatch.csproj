@@ -287,7 +287,13 @@
     <Compile Include="Assets\Code\BoardController.cs" />
     <Compile Include="Assets\Code\BoardGenerator.cs" />
     <Compile Include="Assets\Code\Cell.cs" />
+    <Compile Include="Assets\Code\CellContent.cs" />
+    <Compile Include="Assets\Code\Dungeon\DungeonArtMapper.cs" />
+    <Compile Include="Assets\Code\Dungeon\DungeonContent.cs" />
     <Compile Include="Assets\Code\GameController.cs" />
+    <Compile Include="Assets\Code\GameType.cs" />
+    <Compile Include="Assets\Code\MatchThree\MatchThreeArtMapper.cs" />
+    <Compile Include="Assets\Code\MatchThree\MatchThreeContent.cs" />
     <Compile Include="Assets\Code\Player\Player.cs" />
     <Compile Include="Assets\Code\Player\Status.cs" />
   </ItemGroup>
