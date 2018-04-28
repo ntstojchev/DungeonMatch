@@ -1,14 +1,9 @@
 ﻿using Code.Dungeon;
 using Code.MatchThree;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Code
 {
-	
-
 	public class BoardController : MonoBehaviour
 	{
 		public GameObject DungeonContentPrefab;
@@ -17,12 +12,12 @@ namespace Code
 		public DungeonArtMapper DungeonArt;
 		public MatchThreeArtMapper MatchThreeArt;
 
-		private GameController _game;
+		private GameManager _game;
 		private BoardGenerator _generator;
 
 		private void Awake()
 		{
-			_game = GameController.GetGame();
+			_game = GameManager.GetGame();
 			_generator = new BoardGenerator();
 
 			if (_game.GenerateBoardType == GameType.Dungeon)
